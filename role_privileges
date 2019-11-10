@@ -1,0 +1,30 @@
+grant all on database dfmdb           to role cdh_dataengineers;
+grant all on database golddb          to role cdh_dataengineers;
+grant all on database infa_pushdown  to role cdh_dataengineers;
+grant all on database infa_smoketest  to role cdh_dataengineers;
+grant all on database nyc                   to role cdh_dataengineers;
+grant all on database overlap_db        to role cdh_dataengineers;
+grant all on database rawdb               to role cdh_dataengineers;
+grant all on database sophiadb           to role cdh_dataengineers;
+
+
+grant all on uri "hdfs://nameservice1/data/hive/dfm_reports_db" to role cdh_dataengineers;
+grant all on uri "hdfs://nameservice1/data/hive/dfmdb" to role cdh_dataengineers;
+grant all on uri "hdfs://nameservice1/data/hive/rawdb" to role cdh_dataengineers;
+grant all on uri "hdfs://nameservice1/data/hive/sophiadb" to role cdh_dataengineers;
+
+
+
+
+
+
+revoke all on uri "hdfs://nameservice1//data/hive/dfm_reports_db" from role cdh_dataengineers;
+revoke all on uri "hdfs://nameservice1//data/hive/dfmdb" from role cdh_dataengineers;
+revoke all on uri "hdfs://nameservice1//data/hive/rawdb" from role cdh_dataengineers;
+revoke all on uri "hdfs://nameservice1//data/hive/sophiadb" from role cdh_dataengineers;
+
+
+
+
+grant all on uri "hdfs://nameservice1//data/hive/dfm_reports_db" to role cdh_dataengineers;
+
